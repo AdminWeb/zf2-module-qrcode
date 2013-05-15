@@ -35,6 +35,7 @@ class QRCode {
     public function isHttp()
     {
         $this->endpoint = 'http://'.self::END_POINT;
+        return $this;
     }
     /**
      * Is Https?
@@ -42,6 +43,7 @@ class QRCode {
     public function isHttps()
     {
         $this->endpoint = 'https://'.self::END_POINT;
+        return $this;
     }
 
     /**
@@ -50,6 +52,7 @@ class QRCode {
      */
     public function setTypeChart($chart = 'qr') {
         $this->properties['cht'] = $chart;
+        return $this;
     }
 
     /**
@@ -80,6 +83,7 @@ class QRCode {
         } else {
             throw new \InvalidArgumentException('The parameter $w and $h must be integer type');
         }
+        return $this;
     }
 
     /**
@@ -88,6 +92,7 @@ class QRCode {
      */
     public function getDimensions() {
         return $this->properties['chs'];
+        
     }
 
     /**
@@ -96,6 +101,7 @@ class QRCode {
      */
     public function setCharset($charset = 'UTF-8') {
         $this->properties['choe'] = $charset;
+        return $this;
     }
 
     /**
@@ -114,6 +120,7 @@ class QRCode {
     public function setCorrectionLevel($cl = 'L',$m = 0)
     {
         $this->properties['chld'] = "{$cl}|{$m}";
+        return $this;
     }
     
     /**
@@ -132,6 +139,7 @@ class QRCode {
     public function setData($data)
     {
         $this->properties['chl'] = urlencode($data);
+        return $this;
     }
     /**
      * Return the content data in urldecode format.
