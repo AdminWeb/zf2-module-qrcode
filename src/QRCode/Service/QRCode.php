@@ -68,7 +68,7 @@ class QRCode {
      * @return String
      */
     public function getResult() {
-        return $this->endpoint.http_build_query($this->properties);
+        return $this->endpoint.urldecode(http_build_query($this->properties));
     }
 
     /**
