@@ -7,6 +7,10 @@ See more in https://developers.google.com/chart/infographics/docs/qr_codes
 
 #### Usage:
 
+0. In config/application.config.php file
+
+    In order to get the module loaded first add "QRCode" as a value to "modules" key.
+
 1. In the controller
 
    ```php
