@@ -22,6 +22,3 @@ See more in https://developers.google.com/chart/infographics/docs/qr_codes
    ```php
 	<img src="<?php echo $this->img; ?>" />
     ```
-
-[![Total Downloads]](https://packagist.org/packages/adminweb/qrcode-zf2-module)
-[![Latest Stable Version]](https://packagist.org/packages/adminweb/qrcode-zf2-module)
