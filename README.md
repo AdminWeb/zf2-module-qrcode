@@ -7,7 +7,16 @@ See more in https://developers.google.com/chart/infographics/docs/qr_codes
 
 #### Usage:
 
-1. In the controller
+1. In application.config.php
+
+   ```php
+	return array(
+          'modules' => array(
+               ...,
+               'QRCode',
+               ....     
+    ```
+2. In the controller
 
    ```php
 	$qr = $this->getServiceLocator()->get('QRCode');
@@ -17,7 +26,7 @@ See more in https://developers.google.com/chart/infographics/docs/qr_codes
         return new ViewModel(array('img'=> $qr->getResult()));
     ```
 
-2. In the view
+3. In the view
 
    ```php
 	<img src="<?php echo $this->img; ?>" />
