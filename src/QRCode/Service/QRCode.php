@@ -138,7 +138,7 @@ class QRCode {
      */
     public function setData($data)
     {
-        $this->properties['chl'] = urlencode($data);
+        $this->properties['chl'] = $data;
         return $this;
     }
     /**
@@ -147,6 +147,6 @@ class QRCode {
      */
     public function getData()
     {
-        return urldecode($this->properties['chl']);
+        return $this->properties['chl'];
     }
 }
