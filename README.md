@@ -23,5 +23,5 @@ See more in https://developers.google.com/chart/infographics/docs/qr_codes
 	<img src="<?php echo $this->img; ?>" />
     ```
 
-[![Total Downloads](https://poser.pugx.org/simkimsia/utility_behaviors/d/total.png)](https://packagist.org/packages/adminweb/qrcode-zf2-module)
-[![Latest Stable Version](https://poser.pugx.org/simkimsia/utility_behaviors/v/stable.png)](https://packagist.org/packages/adminweb/qrcode-zf2-module)
+[![Total Downloads]](https://packagist.org/packages/adminweb/qrcode-zf2-module)
+[![Latest Stable Version]](https://packagist.org/packages/adminweb/qrcode-zf2-module)
